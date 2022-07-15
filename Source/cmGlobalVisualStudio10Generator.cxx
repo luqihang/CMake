@@ -569,6 +569,8 @@ bool cmGlobalVisualStudio10Generator::InitializeSystem(cmMakefile* mf)
         return false;
       }
     }
+  } else if (this->SystemName == "AndroidAgde") {
+    this->SystemIsAndroidAgde = true;
   }
 
   return true;

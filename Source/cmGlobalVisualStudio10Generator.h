@@ -132,6 +132,9 @@ public:
   /** Return true if building for Android */
   bool TargetsAndroid() const { return this->SystemIsAndroid; }
 
+  /** Return true if building for Android AGDE */
+  bool TargetsAndroidAgde() const { return this->SystemIsAndroidAgde; }
+
   const char* GetCMakeCFGIntDir() const override { return "$(Configuration)"; }
   bool Find64BitTools(cmMakefile* mf);
 
@@ -242,6 +245,7 @@ protected:
   bool SystemIsWindowsPhone = false;
   bool SystemIsWindowsStore = false;
   bool SystemIsAndroid = false;
+  bool SystemIsAndroidAgde = false;
   bool MSBuildCommandInitialized = false;
 
 private:
