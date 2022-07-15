@@ -226,6 +226,7 @@ private:
   bool Managed;
   bool NsightTegra;
   bool Android;
+  bool AndroidAgde;
   bool HaveCustomCommandDepfile = false;
   unsigned int NsightTegraVersion[4];
   bool TargetCompileAsWinRT;
